@@ -110,6 +110,16 @@ p {
     background-color: var(--gray-light);
 }
 
+.subtitle {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-family: var(--fonts-saira);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
 /* Header */
 
 
