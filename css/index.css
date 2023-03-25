@@ -121,3 +121,30 @@
     line-height: 160%;
     margin-top:  1.2rem;
 }
+
+/* Seção persongens */
+
+.s-personagens {
+    background-image: url('../assets/bg-personagens.jpg');
+    height: 89.9rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.s-personagens .left {
+    width: 48.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.s-personagens .left h2 {
+    margin: 0.8rem 0 3.2rem;
+}
+
+.s-personagens .left p {
+    margin-bottom: 3.2rem;
+}
