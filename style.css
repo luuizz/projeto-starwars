@@ -224,7 +224,7 @@ footer .firts-info .social-links ul {
     align-items: center;
 }
 
-footer .firts-info .social-links ul li a {
+.fa-brands {
     padding: 1.6rem;
     border-radius: 50%;
     display: flex;
@@ -260,3 +260,94 @@ footer .last-info h6 {
 
 
 /* Home */
+
+.s-hero {
+    height: 87.8rem;
+    background-image: url('/assets/bg-hero.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.s-hero .conteudo {
+    padding-top: 22.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s-hero .conteudo .left {
+    width: 80rem;
+}
+
+.s-hero .conteudo .left .plataformas {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4rem;;
+}
+
+.s-hero .conteudo .left .plataformas p {
+    padding-right: 0.8rem;
+}
+
+.s-hero .conteudo .left .plataformas img {
+    display: inline;
+    padding-right: 2.4rem;
+}
+
+.s-hero .conteudo .left .conteudoHero {
+    display: block;
+}
+
+.s-hero .conteudo .left .conteudoHero h1 {
+    margin-bottom: 3.2rem;
+}
+
+.s-hero .conteudo .left .conteudoHero p {
+    margin-bottom: 4rem;
+}
+
+.s-hero .conteudo .left .cta-links {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.s-hero .conteudo .right  {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.s-hero .conteudo .right .social-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-hero .conteudo .right .social-hero p{
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+}
+
+.s-hero .conteudo .right .social-hero hr {
+    border: 0.1rem solid white;
+    margin: 1.2rem 0;
+}
+
+.s-hero .conteudo .right .social-hero .socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.s-hero .conteudo .right .social-hero .socials .fa-brands {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    gap: 0.8rem;
+}
+
+.s-hero .conteudo .right .social-hero .socials .fa-brands:hover {
+    color: var(--primary);
+}
