@@ -17,4 +17,18 @@ body, html {
     font-size: 62.5%;
     font-family: 'Blinker', sans-serif;
     font-family: 'Saira', sans-serif;
+    background-color: var(--dark-gray);
+    color: var(--white-color);
+}
+
+:root {
+    --primary: #EAC60B;
+    --text-color: #BBBBBB;
+    --white-color: #FFFFFF;
+    --black-coor: #000000;
+    --dark-gray: #0D0D0D;
+    --gray-medium: #1D1E1F;
+    --gray-light: #343434;
+    --yellow-medium: #E0B20F;
+    --alert: #FF0202;
 }
