@@ -67,3 +67,18 @@ p {
     color: var(--text-color);
     font-size: 1.6rem;
 }
+
+/* Grids */
+.container {
+    margin: 0 auto;
+    width: 128rem;
+}
+
+/* Patterns */
+
+/* Header */
+
+
+/* Footer */
+
+/* Home */
