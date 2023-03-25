@@ -15,7 +15,7 @@
 }
 
 .s-hero .conteudo .left {
-    width: 80rem;
+    width: 77.7rem;
 }
 
 .s-hero .conteudo .left .plataformas {
@@ -92,3 +92,32 @@
 }
 
 /* Informções do jogo */
+.s-info-geral {
+    background-color: var(--gray-semi-medium);
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.s-info-geral ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.s-info-geral ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s-info-geral ul li span {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: var(--fonts-saira);
+    line-height: 160%;
+    margin-top:  1.2rem;
+}
