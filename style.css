@@ -205,6 +205,57 @@ header .container nav ul li a:hover:after {
 }
 
 /* Footer */
+footer {
+    background-color: var(--black-color);
+    height: 25.7rem;
+    padding: 6.4rem 0;
+}
+
+footer .firts-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .firts-info .social-links ul {
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+footer .firts-info .social-links ul li a {
+    padding: 1.6rem;
+    border-radius: 50%;
+    display: flex;
+    transition: background 0.3s;
+    font-size: 2.1rem;
+    color: var(--white-color);
+
+}
+
+footer .container hr {
+    border-bottom: 1px solid var(--white-color);
+    margin: 3.2rem 0;
+}
+
+.fa-brands:hover {
+    color: var(--primary);
+}
+
+footer .last-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .last-info h6 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-family: var(--fonts-saira);
+}
 
 
 
