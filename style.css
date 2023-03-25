@@ -263,7 +263,7 @@ footer .last-info h6 {
 
 .s-hero {
     height: 87.8rem;
-    background-image: url('/assets/bg-hero.jpg');
+    background-image: url('./assets/bg-hero.jpg');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
