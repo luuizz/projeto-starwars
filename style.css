@@ -1,5 +1,20 @@
+/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    border: 0;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: none;
+}
+
+/* Global */
+body, html {
+    font-size: 62.5%;
+    font-family: 'Blinker', sans-serif;
+    font-family: 'Saira', sans-serif;
 }
