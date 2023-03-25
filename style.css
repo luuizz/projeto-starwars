@@ -167,6 +167,10 @@ header .container nav ul li a:hover {
     color: var(--text-color);
 }
 
+header .container nav ul li a:active {
+    color: var(--text-color);
+}
+
 header .container nav ul li a:after {
     content: "";
     width: 0;
