@@ -33,6 +33,7 @@ body, html {
     --alert: #FF0202;
     --fonts-blinker: 'Blinker', sans-serif;
     --fonts-saira: 'Saira', sans-serif;
+    --header-height: 8rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -121,8 +122,86 @@ p {
 }
 
 /* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: var(--header-height);
+    padding: 2.2rem 0;
+    background: linear-gradient(270deg, rgba(1, 1, 1, 0.2) 0%, rgba(2, 2, 2, 0) 100%);
+    backdrop-filter: blur(1.2rem);
+    -webkit-backdrop-filter: blur(1.2rem);
+}
 
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+}
+
+nav ul li a{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-family: var(--fonts-saira);
+    color: var(--white-color);
+}
+
+header .container nav ul li a:hover {
+    color: var(--text-color);
+}
+
+header .container nav ul li a:after {
+    content: "";
+    width: 0;
+    display: block;
+    height: 0.2rem;
+    margin-top: 0.5rem;
+    transition: width .3s;
+    background-color: var(--primary);
+}
+
+header .container nav ul li a:hover:after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.btnCompra a{
+    background-color: var(--primary);
+    width: 17.7rem;
+    height: 3.9rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    font-family: var(--fonts-blinker);
+    color: var(--black-color);
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.btnCompra a:hover {
+    background-color: var(--yellow-medium);
+}
 
 /* Footer */
+
+
 
 /* Home */
