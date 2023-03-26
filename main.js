@@ -1,12 +1,11 @@
-// Swiper
+// Swiper seção de mapas
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3.5,
-    spaceBetween: 19,
+    spaceBetween: 24,
     grabCursor: true,
-    freeMode: true,
     breakpoints: {
-        320: {
+      320: {
         slidesPerView: 1.1,
       },
       768: {

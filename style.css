@@ -12,6 +12,19 @@
     box-shadow: none;
 }
 
+*::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: #2c2c2a;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to top, var(--primary), #2c2c2a);
+    border-radius: 2rem;
+}
+
 /* Global */
 body, html {
     font-size: 62.5%;
@@ -284,3 +297,4 @@ footer .last-info h6 {
     pointer-events: none;
     z-index: 1;
 }
+
