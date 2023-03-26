@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Saira&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <title>Star Wars Battlefront 2 | Projeto final</title>
 </head>
 <body>
@@ -162,9 +163,9 @@
                     <h2>Conheça alguns dos personagens</h2>
                 </div>
                 <div class="personagens-thumbs">
-                    <div class="swiper-slider">
-                        <ul class="swiper-wrapper">
-                            <li class="swiper-slide">
+                    <div class="swiper slider-thumb swiper-initialized swiper-horizontal swiper-pointer-events swiper-thumbs">
+                        <ul class="swiper-wrapper slider-thumb-list character-thumb-list">
+                            <li class="swiper-slide slider-thumb-list-item swiper-slide-visible swiper-slide-active swiper-slide-thumb-active" aria-label="1 / 10">
                                 <figure class="imgPersonagem">
                                     <p class="character-image-item"><img src="./assets/thumb_luke.jpg" alt="Imagem do Luke Skywalker"></p>
                                     <figcaption class="small-text">Luke Skywalker</figcaption>
@@ -669,7 +670,6 @@
                     </div>
 
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
         </div>
         </section>
@@ -719,6 +719,7 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/e8cb557728.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

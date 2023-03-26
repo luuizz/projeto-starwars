@@ -19,6 +19,7 @@ body, html {
     font-family: 'Saira', sans-serif;
     background-color: var(--dark-gray);
     color: var(--white-color);
+    overflow-x: hidden;
 }
 
 :root {
