@@ -275,7 +275,7 @@ footer .last-info h6 {
     display: block;
     width: 100vw;
     height: 100vh;
-    opacity: 0.05;
+    opacity: 0.1;
     background-image: url('./assets/ruido-animado.gif');
     overflow: hidden;
     position: fixed;
