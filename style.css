@@ -86,10 +86,20 @@ p {
     font-size: 1.6rem;
 }
 
+.small-text {
+    font-family: var(--fonts-blinker);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+    text-align: right;
+}
+
 /* Grids */
 .container {
     margin: 0 auto;
-    width: 128rem;
+    width: 100%;
+    max-width: 128.6rem;
+    padding: 0px 1.5rem;
 }
 
 /* Patterns */
@@ -298,3 +308,21 @@ footer .last-info h6 {
     z-index: 1;
 }
 
+.loading-screen {
+    position: relative;
+    padding: 0;
+    background-color: var(--primary);
+    width: 0;
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}

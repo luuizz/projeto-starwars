@@ -159,8 +159,28 @@
     background-repeat: no-repeat;
 }
 
-.s-selecaoPersonagens .left {
+.s-selecaoPersonagens .conteudo .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.s-selecaoPersonagens .conteudo .row h2 {
     width: 38.4rem;
+}
+
+.s-selecaoPersonagens .conteudo .left {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+
+.mySwiper3 .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+}
+
+  .mySwiper3 .swiper-slide-thumb-active {
+    opacity: 1;
 }
 
 /* Seção de mapas */
@@ -201,4 +221,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.maps .swiper-free-mode>.swiper-wrapper {
+    margin-left: calc(50% - 64rem) !important;
 }

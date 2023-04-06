@@ -1,101 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Star Wars Battlefront 2 | Projeto final">
-    <meta name="description" content="Entre no mundo de Star Wars e experimente a ação de batalhas épicas em uma galáxia muito, muito distante. Com gráficos incríveis, gameplay emocionante e uma seleção de personagens icônicos, Star Wars Battlefront 2 é o jogo que todo fã de Star Wars precisa jogar. Junte-se à batalha hoje mesmo e descubra porque este é o melhor jogo de Star Wars já feito!">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <meta name="description"
+        content="Entre no mundo de Star Wars e experimente a ação de batalhas épicas em uma galáxia muito, muito distante. Com gráficos incríveis, gameplay emocionante e uma seleção de personagens icônicos, Star Wars Battlefront 2 é o jogo que todo fã de Star Wars precisa jogar. Junte-se à batalha hoje mesmo e descubra porque este é o melhor jogo de Star Wars já feito!">
+
     <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Saira&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Saira&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="style.css">
     <title>Star Wars Battlefront 2 | Projeto final</title>
 </head>
-<body>
+
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
     <!-- Estrutura do cabeçalho -->
     <header class="site-header" id="scroll">
         <div class="container">
             <div class="header">
-            <div class="logo">
-                <a href="index.html">
-            <img src="./assets/logo-swbf2.png" alt="Logotipo escrito Star Wars Battlefront II"></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="./pages/midia.html">Mídia</a></li>
-                    <li><a href="./pages/personagens.html">Personagens</a></li>
-                    <li><a href="./pages/requisitos-sistema.html">Requisitos do Sistema</a></li>
-                    <li><a href="./pages/faq.html">Perguntas frequentes</a></li>
-                </ul>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/logo-swbf2.png" alt="Logotipo escrito Star Wars Battlefront II"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./pages/midia.html">Mídia</a></li>
+                        <li><a href="./pages/personagens.html">Personagens</a></li>
+                        <li><a href="./pages/requisitos-sistema.html">Requisitos do Sistema</a></li>
+                        <li><a href="./pages/faq.html">Perguntas frequentes</a></li>
+                    </ul>
 
-                <!-- Ativar Menu responsivo -->
-                <div class="toggle icon-menu"></div>
-                <div class="toggle icon-close"></div>
-            </nav>
-            <div class="btnCompra">
-                <a href="./pages/plataformas.html">
-                <div class="btn btnPattern__small">Compre agora</div></a>  
+                    <!-- Ativar Menu responsivo -->
+                    <div class="toggle icon-menu"></div>
+                    <div class="toggle icon-close"></div>
+                </nav>
+                <div class="btnCompra">
+                    <a href="./pages/plataformas.html">
+                        <div class="btn btnPattern__small">Compre agora</div>
+                    </a>
+                </div>
             </div>
-        </div>
         </div>
     </header>
 
     <!-- Conteúdo da página -->
-    <main>
+    <main data-barba="container" data-barba-namespace="index">
         <section class="s-hero">
             <div class="container">
                 <div class="conteudo">
-                <div class="left">
-                    <div class="plataformas">
-                        <p>Dispnível em:</p>
-                        <img src="./assets/logo steam.svg" alt="Logo da Steam">
-                        <img src="./assets/logo xbox one.svg" alt="Logo do Xbox One">
-                        <img src="./assets/logo ps4.svg" alt="Logo do PS4">
+                    <div class="left">
+                        <div class="plataformas">
+                            <p>Dispnível em:</p>
+                            <img src="./assets/logo steam.svg" alt="Logo da Steam">
+                            <img src="./assets/logo xbox one.svg" alt="Logo do Xbox One">
+                            <img src="./assets/logo ps4.svg" alt="Logo do PS4">
+                        </div>
+                        <div class="conteudoHero">
+                            <h1 class="animate-this">Domine a galáxia em Star Wars Battlefront 2!</h1>
+                            <p>Prepare-se para entrar em uma galáxia muito, muito distante e participar de batalhas
+                                épicas em Star Wars Battlefront 2. Junte-se à Rebelião ou ao Império e lute em alguns
+                                dos locais mais emblemáticos da franquia Star Wars. Aproveite uma experiência de jogo
+                                intensa e imersiva, com gráficos incríveis que irão transportá-lo para o mundo de Star
+                                Wars.</p>
+                        </div>
+                        <div class="cta-links">
+                            <a href="./pages/plataformas.html">
+                                <div class="btn-primary">Compre agora</div>
+                            </a>
+                            <a href="./pages/midia.html">
+                                <div class="btn-secondary">Assista ao trailer</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="conteudoHero">
-                        <h1>Domine a galáxia em Star Wars Battlefront 2!</h1>
-                        <p>Prepare-se para entrar em uma galáxia muito, muito distante e participar de batalhas épicas em Star Wars Battlefront 2. Junte-se à Rebelião ou ao Império e lute em alguns dos locais mais emblemáticos da franquia Star Wars. Aproveite uma experiência de jogo intensa e imersiva, com gráficos incríveis que irão transportá-lo para o mundo de Star Wars.</p>
-                    </div>
-                    <div class="cta-links">
-                        <a href="./pages/plataformas.html"><div class="btn-primary">Compre agora</div></a>
-                        <a href="./pages/midia.html"><div class="btn-secondary">Assista ao trailer</div></a>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="social-hero">
-                        <p>Siga-nos</p>
-                        <hr>
-                        <ul class="socials">
+                    <div class="right">
+                        <div class="social-hero">
+                            <p>Siga-nos</p>
+                            <hr>
+                            <ul class="socials">
                                 <li>
                                     <a href="https://www.facebook.com/EAStarWars">
                                         <i class="fa-brands fa-facebook"></i>
                                     </a>
                                 </li>
-        
+
                                 <li>
                                     <a href="https://www.youtube.com/EAStarWars">
                                         <i class="fa-brands fa-youtube"></i>
                                     </a>
                                 </li>
-        
+
                                 <li>
                                     <a href="https://www.instagram.com/eastarwars">
                                         <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </li>
-        
+
                                 <li>
                                     <a href="https://www.twitter.com/EAStarWars">
                                         <i class="fa-brands fa-twitter"></i>
                                     </a>
                                 </li>
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -118,21 +135,24 @@
                     </li>
 
                     <li>
-                        <img src="./assets/icon-remote-use.png" alt="Ícone de um controle do PS4 com linhas pontilhadas centralizadas no meio do controle">
+                        <img src="./assets/icon-remote-use.png"
+                            alt="Ícone de um controle do PS4 com linhas pontilhadas centralizadas no meio do controle">
                         <span>
                             Compatível com uso remoto
                         </span>
                     </li>
 
                     <li>
-                        <img src="./assets/icon-faixa-12anos.png" alt="Ícone de um retângulo na cor amarela com o numeral 12 centralizado">
+                        <img src="./assets/icon-faixa-12anos.png"
+                            alt="Ícone de um retângulo na cor amarela com o numeral 12 centralizado">
                         <span>
                             Classificação indicativa: 12 anos
                         </span>
                     </li>
 
                     <li>
-                        <img src="./assets/icon-assistent-gameplay.png" alt="Ícone de uma lâmpada com o símbolo de soma sobrepondos">
+                        <img src="./assets/icon-assistent-gameplay.png"
+                            alt="Ícone de uma lâmpada com o símbolo de soma sobrepondos">
                         <span>
                             Compatível com a ajuda do jogo
                         </span>
@@ -140,7 +160,7 @@
                 </ul>
             </div>
         </section>
-    
+
         <section class="s-personagens">
             <div class="container">
                 <div class="left">
@@ -148,451 +168,21 @@
                         <img src="./assets/bullet.svg" alt="Ícone de um retâgulo rotacionado">
                         <span>Eletronic Arts</span>
                     </h6>
-                    <h2>
+                    <h2 class="animate-this">
                         Personagens heroicos de todas as eras
                     </h2>
-                    <p>Jogue como (ou contra) os vilões mais temidos e os heróis mais amados de Star Wars de todas as três eras, incluindo Kylo Ren, Rey, Darth Maul, Yoda e muitos outros. Habilidades únicas e aprimoráveis garantem que os personagens clássicos levem seus poderes e personalidades ao campo de batalha.</p>
-                    <a href="./pages/personagens.html"><div class="btn-primary">Compre agora</div></a>
+                    <p>Jogue como (ou contra) os vilões mais temidos e os heróis mais amados de Star Wars de todas as
+                        três eras, incluindo Kylo Ren, Rey, Darth Maul, Yoda e muitos outros. Habilidades únicas e
+                        aprimoráveis garantem que os personagens clássicos levem seus poderes e personalidades ao campo
+                        de batalha.</p>
+                    <a href="./pages/personagens.html">
+                        <div class="btn-primary">Compre agora</div>
+                    </a>
                 </div>
             </div>
         </section>
-    
-        <section class="s-selecaoPersonagens">
-            <div class="container">
-                <div class="left">
-                    <h2>Conheça alguns dos personagens</h2>
-                </div>
-                <div class="personagens-thumbs">
-                    <div thumbsSlider="" class="swiper mySwiper" >
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <figure class="imgPersonagem">
-                                    <p class="character-image-item"><img src="./assets/thumb_luke.jpg" alt="Imagem do Luke Skywalker"></p>
-                                    <figcaption class="small-text">Luke Skywalker</figcaption>
-                                </figure>                   
-                            </div>
 
-                            <div class="swiper-slide">
-                                <figure class="imgPersonagem">
-                                    <p class="character-image-item"><img src="./assets/thumb_leia.jpg" alt="Imagem da Leia Organa"></p>
-                                    <figcaption class="small-text">Leia Organa</figcaption>
-                                </figure>                         
-                            </div>
 
-                            <div class="swiper-slide">
-                                <figure class="imgPersonagem">
-                                    <p class="character-image-item"><img src="./assets/thumb_han solo.jpg" alt="Imagem do Han Solo"></p>
-                                    <figcaption class="small-text">Han Solo</figcaption>
-                                </figure>                    
-                            </div>
-
-                            <div class="swiper-slide">
-                                <figure class="imgPersonagem">
-                                    <p class="character-image-item"><img src="./assets/thumb_darth vader.jpg" alt="Imagem do Darth Vader"></p>
-                                    <figcaption class="small-text">Darth Vader</figcaption>
-                                </figure>            
-                            </div>
-
-                            <div class="swiper-slide">
-                                <figure class="imgPersonagem">
-                                    <p class="character-image-item"><img src="./assets/thumb_rey.jpg" alt="Imagem da Rey"></p>
-                                    <figcaption class="small-text">Rey</figcaption>
-                                </figure>                               
-                            </div>
-
-                            <div class="swiper-slide">
-                                <figure class="imgPersonagem">
-                                    <p class="character-image-item"><img src="./assets/thumb_finn.jpg" alt="Imagem do Finn"></p>
-                                    <figcaption class="small-text">Finn</figcaption>
-                                </figure>                            
-                            </div>
-
-                            <div class="swiper-slide">
-                                <figure class="imgPersonagem">
-                                    <p class="character-image-item"><img src="./assets/thumb_kylo ren.jpg" alt="Imagem do Kylo Ren"></p>
-                                    <figcaption class="small-text">Kylo Ren</figcaption>
-                                </figure>                               
-                            </div>
-
-                            <div class="swiper-slide">
-                                <figure class="imgPersonagem">
-                                    <p class="character-image-item"><img src="./assets/thumb_yoda.jpg" alt="Imagem do Yoda"></p>
-                                    <figcaption class="small-text">Yoda</figcaption>
-                                </figure>                              
-                            </div>
-
-                            <div class="swiper-slide">
-                                <figure class="imgPersonagem">
-                                    <p class="character-image-item"><img src="./assets/thumb_darth maul.jpg" alt="Imagem do Darth Maul"></p>
-                                    <figcaption class="small-text">Darth Maul</figcaption>
-                                </figure>                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="personagens-banners">
-                    <div thumbsSlider="" class="swiper mySwiper2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="character-img">
-                                    <picture>
-                                        <img src="./assets/banner_luke.jpg" alt="Imagem do Luke Skywalker">
-                                    </picture>
-                                </div>
-                                <div class="info-character">
-                                    <h2>Luke Skywalker</h2>
-                                    <h3>Humano</h3>
-                                    <div class="info-api">
-                                        <table border="">
-                                            <tr>
-                                                <td><h4>Afiliaçao</h4></td>
-                                                <td><p>Aliança Jedi</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Gênero</h4></td>
-                                                <td><p>Masculino</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Veículos</h4></td>
-                                                <td><p>Snowspeeder, Imperial Speeder Bike</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Armas</h4></td>
-                                                <td><p>Sabre de Luz</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="swiper-slide">
-                                <div class="character-img">
-                                    <picture>
-                                        <img src="./assets/banner_leia.jpg" alt="Imagem da Leia Organa">
-                                    </picture>
-                                </div>
-                                <div class="info-character">
-                                    <h2>Leia Organa</h2>
-                                    <h3>Humana</h3>
-                                    <div class="info-api">
-                                        <table border="">
-                                            <tr>
-                                                <td><h4>Afiliaçao</h4></td>
-                                                <td><p>Aliança Jedi</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Gênero</h4></td>
-                                                <td><p>Masculino</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Veículos</h4></td>
-                                                <td><p>Snowspeeder, Imperial Speeder Bike</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Armas</h4></td>
-                                                <td><p>Sabre de Luz</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="character-img">
-                                    <picture>
-                                        <img src="./assets/banner_han solo.jpg" alt="Imagem do Han Solo">
-                                    </picture>
-                                </div>
-                                <div class="info-character">
-                                    <h2>Han Solo</h2>
-                                    <h3>Humano</h3>
-                                    <div class="info-api">
-                                        <table border="">
-                                            <tr>
-                                                <td><h4>Afiliaçao</h4></td>
-                                                <td><p>Aliança Jedi</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Gênero</h4></td>
-                                                <td><p>Masculino</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Veículos</h4></td>
-                                                <td><p>Snowspeeder, Imperial Speeder Bike</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Armas</h4></td>
-                                                <td><p>Sabre de Luz</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="character-img">
-                                    <picture>
-                                        <img src="./assets/banner_boba fett.jpg" alt="Imagem do Boba Fett">
-                                    </picture>
-                                </div>
-                                <div class="info-character">
-                                    <h2>Boba Fett</h2>
-                                    <h3>Humano</h3>
-                                    <div class="info-api">
-                                        <table border="">
-                                            <tr>
-                                                <td><h4>Afiliaçao</h4></td>
-                                                <td><p>Aliança Jedi</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Gênero</h4></td>
-                                                <td><p>Masculino</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Veículos</h4></td>
-                                                <td><p>Snowspeeder, Imperial Speeder Bike</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Armas</h4></td>
-                                                <td><p>Sabre de Luz</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="character-img">
-                                    <picture>
-                                        <img src="./assets/banner_darth vader.jpg" alt="Imagem do Darth Vader">
-                                    </picture>
-                                </div>
-                                <div class="info-character">
-                                    <h2>Darth Vader</h2>
-                                    <h3>Humano</h3>
-                                    <div class="info-api">
-                                        <table border="">
-                                            <tr>
-                                                <td><h4>Afiliaçao</h4></td>
-                                                <td><p>Aliança Jedi</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Gênero</h4></td>
-                                                <td><p>Masculino</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Veículos</h4></td>
-                                                <td><p>Snowspeeder, Imperial Speeder Bike</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Armas</h4></td>
-                                                <td><p>Sabre de Luz</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="character-img">
-                                    <picture>
-                                        <img src="./assets/banner_rey.jpg" alt="Imagem da Rey">
-                                    </picture>
-                                </div>
-                                <div class="info-character">
-                                    <h2>Rey</h2>
-                                    <h3>Humana</h3>
-                                    <div class="info-api">
-                                        <table border="">
-                                            <tr>
-                                                <td><h4>Afiliaçao</h4></td>
-                                                <td><p>Aliança Jedi</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Gênero</h4></td>
-                                                <td><p>Masculino</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Veículos</h4></td>
-                                                <td><p>Snowspeeder, Imperial Speeder Bike</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Armas</h4></td>
-                                                <td><p>Sabre de Luz</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="character-img">
-                                    <picture>
-                                        <img src="./assets/banner_finn.jpg" alt="Imagem do Finn">
-                                    </picture>
-                                </div>
-                                <div class="info-character">
-                                    <h2>Finn</h2>
-                                    <h3>Humano</h3>
-                                    <div class="info-api">
-                                        <table border="">
-                                            <tr>
-                                                <td><h4>Afiliaçao</h4></td>
-                                                <td><p>Aliança Jedi</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Gênero</h4></td>
-                                                <td><p>Masculino</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Veículos</h4></td>
-                                                <td><p>Snowspeeder, Imperial Speeder Bike</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Armas</h4></td>
-                                                <td><p>Sabre de Luz</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="character-img">
-                                    <picture>
-                                        <img src="./assets/banner_kylo ren.jpg" alt="Imagem do Kylo Ren">
-                                    </picture>
-                                </div>
-                                <div class="info-character">
-                                    <h2>Kylo Ren</h2>
-                                    <h3>Humano</h3>
-                                    <div class="info-api">
-                                        <table border="">
-                                            <tr>
-                                                <td><h4>Afiliaçao</h4></td>
-                                                <td><p>Aliança Jedi</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Gênero</h4></td>
-                                                <td><p>Masculino</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Veículos</h4></td>
-                                                <td><p>Snowspeeder, Imperial Speeder Bike</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Armas</h4></td>
-                                                <td><p>Sabre de Luz</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="character-img">
-                                    <picture>
-                                        <img src="./assets/banner_yoda.jpg" alt="Imagem do Yoda">
-                                    </picture>
-                                </div>
-                                <div class="info-character">
-                                    <h2>Yoda</h2>
-                                    <h3>Desconhecido</h3>
-                                    <div class="info-api">
-                                        <table border="">
-                                            <tr>
-                                                <td><h4>Afiliaçao</h4></td>
-                                                <td><p>Aliança Jedi</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Gênero</h4></td>
-                                                <td><p>Masculino</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Veículos</h4></td>
-                                                <td><p>Snowspeeder, Imperial Speeder Bike</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Armas</h4></td>
-                                                <td><p>Sabre de Luz</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="character-img">
-                                    <picture>
-                                        <img src="./assets/banner_maul.jpg" alt="Imagem do Darth Maul">
-                                    </picture>
-                                </div>
-                                <div class="info-character">
-                                    <h2>Darth Maul</h2>
-                                    <h3>Dathomirian</h3>
-                                    <div class="info-api">
-                                        <table border="">
-                                            <tr>
-                                                <td><h4>Afiliaçao</h4></td>
-                                                <td><p>Aliança Jedi</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Gênero</h4></td>
-                                                <td><p>Masculino</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Veículos</h4></td>
-                                                <td><p>Snowspeeder, Imperial Speeder Bike</p></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td><h4>Armas</h4></td>
-                                                <td><p>Sabre de Luz</p></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <span class="swiper-notification"></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
         <section class="maps">
             <div class="container">
                 <div class="description">
@@ -602,15 +192,18 @@
                             <span>Conheça os mapas</span>
                         </h6>
                         <h2>Locais Lendários</h2>
-                        <p>Lute com os amigos e heróis em diversos planetas de todas as três eras cinematográficas de Star Wars. Lute nas plataformas chuvosas de Kamino, enfrente a Primeira Ordem na tundra da Base Starkiller e expulse os invasores Separatistas do palácio de Theed, em Naboo.</p>
+                        <p>Lute com os amigos e heróis em diversos planetas de todas as três eras cinematográficas de
+                            Star Wars. Lute nas plataformas chuvosas de Kamino, enfrente a Primeira Ordem na tundra da
+                            Base Starkiller e expulse os invasores Separatistas do palácio de Theed, em Naboo.</p>
                     </div>
                     <div class="right">
                         <img src="./assets/illustra.svg" alt="Illustração da Estrela da Morte">
                     </div>
                 </div>
-            </div>
 
-                  <!-- Swiper -->
+
+
+                <!-- Swiper -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -621,56 +214,59 @@
                             </div>
                         </div>
 
-                    <div class="swiper-slide">
-                        <div class="maps-select">
-                            <div class="image">
-                                <img src="./assets/img-02.jpg" alt="">
+                        <div class="swiper-slide">
+                            <div class="maps-select">
+                                <div class="image">
+                                    <img src="./assets/img-02.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="swiper-slide">
-                        <div class="maps-select">
-                            <div class="image">
-                                <img src="./assets/img-03.jpg" alt="">
+                        <div class="swiper-slide">
+                            <div class="maps-select">
+                                <div class="image">
+                                    <img src="./assets/img-03.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="swiper-slide">
-                        <div class="maps-select">
-                            <div class="image">
-                                <img src="./assets/img-04.jpg" alt="">
+                        <div class="swiper-slide">
+                            <div class="maps-select">
+                                <div class="image">
+                                    <img src="./assets/img-04.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="swiper-slide">
-                        <div class="maps-select">
-                            <div class="image">
-                                <img src="./assets/img-05.jpg" alt="">
+                        <div class="swiper-slide">
+                            <div class="maps-select">
+                                <div class="image">
+                                    <img src="./assets/img-05.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="swiper-slide">
-                        <div class="maps-select">
-                            <div class="image">
-                                <img src="./assets/img-06.jpg" alt="">
+                        <div class="swiper-slide">
+                            <div class="maps-select">
+                                <div class="image">
+                                    <img src="./assets/img-06.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="swiper-slide">
-                        <div class="maps-select">
-                            <div class="image">
-                                <img src="./assets/img-07.jpg" alt="">
+                        <div class="swiper-slide">
+                            <div class="maps-select">
+                                <div class="image">
+                                    <img src="./assets/img-07.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
                     </div>
                 </div>
+            </div>
+
+
 
         </section>
     </main>
@@ -680,8 +276,9 @@
         <div class="container">
             <div class="firts-info">
                 <div class="logo-footer">
-                <a href="/index.html">
-                <img src="./assets/logo-swbf2.png" alt="Logotipo do jogo Star Wars Battlefront 2"></a></div>
+                    <a href="/index.html">
+                        <img src="./assets/logo-swbf2.png" alt="Logotipo do jogo Star Wars Battlefront 2"></a>
+                </div>
                 <div class="social-links">
                     <ul>
                         <li>
@@ -719,8 +316,12 @@
         </div>
     </footer>
     <div class="noise"></div>
-    <script src="https://kit.fontawesome.com/e8cb557728.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/e8cb557728.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
