@@ -147,7 +147,7 @@ p {
 }
 
 .banner-initial {
-    background-image: url('./assets/banner-initial.jpg');
+    background-image: url('../assets/banner-initial.jpg');
     height: 32.4rem;
     background-position: center center;
     background-size: cover;
@@ -222,6 +222,7 @@ header .container nav ul li a:hover:after {
     width: 100%;
     transition: width .3s;
 }
+
 
 .btnCompra a{
     background-color: var(--primary);
