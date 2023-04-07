@@ -86,6 +86,39 @@ p {
     font-size: 1.6rem;
 }
 
+/* Fontes responsivas */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4.8rem;
+    }
+    
+    h2 {
+        font-size: 3.2rem;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+    }
+    
+    h4 {
+        font-size: 2rem;
+    }
+    
+    h5 {
+        font-size: 1.6rem;
+    }
+    
+    h6 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+
 .small-text {
     font-family: var(--fonts-blinker);
     font-size: 1.2rem;
@@ -223,6 +256,14 @@ header .container nav ul li a:hover:after {
     transition: width .3s;
 }
 
+/* Menu responsivo */
+
+@media (max-width: 998px) {
+    header nav {
+        display: none;
+    }
+}
+
 
 .btnCompra a{
     background-color: var(--primary);
@@ -295,12 +336,35 @@ footer .last-info h6 {
     font-family: var(--fonts-saira);
 }
 
+/* Rodapé responsivo */
+
+@media (max-width: 768px) {
+    footer {
+        height: 33.7rem;
+    }
+
+    footer .firts-info {
+        flex-direction: column;
+    }
+
+    footer .last-info h6 {
+        margin-bottom: 2.4rem;
+        text-align: center;
+    }
+
+    footer .last-info {
+        flex-direction: column;
+    }
+
+    
+}
+
 .noise {
     display: block;
     width: 100vw;
     height: 100vh;
     opacity: 0.1;
-    background-image: url('./assets/ruido-animado.gif');
+    background-image: url('../assets/ruido-animado.gif');
     overflow: hidden;
     position: fixed;
     top: 0;

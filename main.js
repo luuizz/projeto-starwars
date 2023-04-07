@@ -72,7 +72,7 @@ var swiper = new Swiper(".slide-maps", {
         slidesPerView: 2.2,
       },
       991: {
-        slidesPerView: 2.8,
+        slidesPerView: 2.5,
       },
       1200: {
         slidesPerView: 2.5,

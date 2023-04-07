@@ -208,3 +208,256 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+/* Layout responsivo */
+@media(max-width: 1024px){
+    body, html {
+        font-size: 55%;
+    }
+
+    .container {
+        padding: 0px 2.5rem;
+    }
+
+    .s-info-geral {
+        height: 21rem;
+    }
+
+    .s-info-geral ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
+    }
+
+    .s-personagens {
+        height: 66.9rem
+    }
+
+    .maps {
+        height: 60rem;
+    }
+
+    .maps .description {
+        margin: 5.6rem 0 5.6rem;
+    }
+}  
+
+@media(max-width: 996px) {
+    .s-hero {
+        height: 74.8rem;
+    }
+
+    .s-hero .conteudo {
+        padding-top: 20rem;
+        flex-direction: column;
+    }
+
+    
+    .s-hero .conteudo .left {
+        width: 100%;
+    }
+
+    .s-hero .conteudo .left .plataformas {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .s-hero .conteudo .left .conteudoHero h1 {
+        text-align: center;
+    }
+
+    .s-hero .conteudo .left .conteudoHero p {
+        text-align: center;
+    }
+
+    
+    .s-hero .conteudo .left .cta-links {
+        justify-content: center;
+    }
+
+    .s-hero .conteudo .right {
+    justify-content: center;
+    margin-top: 4rem;
+    }
+
+    .s-hero .conteudo .right .social-hero {
+        flex-direction: row;
+    }
+
+    .s-hero .conteudo .right .social-hero p {
+        writing-mode: horizontal-tb;
+    }
+
+    .s-hero .conteudo .right .social-hero .socials {
+        flex-direction: row;
+    }
+
+    .s-hero .conteudo .right .social-hero hr {
+        margin-left: 1rem;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .s-hero {
+        height: 69.8rem;
+    }
+
+    .s-hero .conteudo {
+        padding-top: 17rem;
+    }
+
+    
+    .s-hero .conteudo .left .plataformas {
+        margin-bottom: 1.4rem;
+    }
+
+    .s-hero .conteudo .left .conteudoHero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s-hero .conteudo .left .conteudoHero h1 {
+        width: 80%;
+    }
+
+    
+    .s-hero .conteudo .left .conteudoHero p {
+        width: 80%;
+    }
+    
+    .s-info-geral {
+        height: 30rem;
+    }
+
+    .s-info-geral ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .s-personagens {
+        background-image: url('../assets/bg-rey-tablet-768px.jpg');
+        align-items: flex-end;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    
+    .s-personagens .left {
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 8rem;
+    }
+
+    
+    .s-personagens .left h2 {
+        width: 65%;
+        text-align: center;
+    }
+
+    .s-personagens .left p {
+        text-align: center;
+    }
+
+    .maps {
+        height: 70rem;
+    }
+    
+    .maps .description {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .maps .description .left {
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .maps .description .left h2 {
+        text-align: center;
+    }
+
+    .maps .container .description .left p {
+        text-align: center;
+    }
+
+    .maps .container .description .left .subtitle {
+        justify-content: center;
+    }
+
+
+}
+
+@media(max-width: 560px) {
+    body, html {
+        font-size: 62.5%;
+    }
+
+    .container {
+        padding: 0px 2rem;
+    }
+
+
+    
+    .s-hero {
+        height: 100.8rem;
+    }
+
+
+
+    .s-hero .conteudo .left .plataformas {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .s-hero .conteudo .left .plataformas img:last-of-type {
+        margin-top: 1.5rem;
+    }
+
+    .s-hero .conteudo .left .plataformas p {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+    }
+
+    
+    .s-hero .conteudo .left .conteudoHero h1 {
+        width: 100%
+    }
+
+    .s-hero .conteudo .left .cta-links {
+        flex-wrap: wrap;
+    }
+
+    .s-hero .conteudo .left .conteudoHero p {
+        width: 95%;
+    }
+
+    .s-hero .conteudo .right {
+        margin-top: 3rem;
+    }
+
+    
+    .s-hero .conteudo {
+        padding-top: 15rem;
+    }
+
+
+
+    .s-info-geral {
+        height: 35rem;
+    }
+
+    .maps {
+        height: 70rem;
+    }
+        
+    .s-personagens {
+        background-image: url('../assets/bg-rey-mobile.jpg');
+        background-position: top center;
+        background-size: cover;
+    }
+}
