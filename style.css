@@ -323,6 +323,6 @@ footer .last-info h6 {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: 10;
+    z-index: 1000000;
     pointer-events: none;
 }

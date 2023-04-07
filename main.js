@@ -60,9 +60,9 @@ $(function () {
 
 // Swiper seção de mapas
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".slide-maps", {
     slidesPerView: 3.5,
-    spaceBetween: 24,
+    spaceBetween: 32,
     grabCursor: true,
     breakpoints: {
       320: {
