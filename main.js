@@ -101,6 +101,18 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).classList.add("active");
   evt.currentTarget.classList.add("active");
-
-  
 }
+
+
+// Menu responsivo
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault;
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+

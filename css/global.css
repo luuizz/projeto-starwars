@@ -277,13 +277,93 @@ header .container nav ul li a:hover:after {
     transition: width .3s;
 }
 
+#btn-mobile {
+    display: none;
+}
+
 /* Menu responsivo */
 
 @media (max-width: 998px) {
-    header nav {
+    .btnCompra {
         display: none;
     }
 
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: var(--header-height);
+        height: 0;
+        background-color: var(--dark-gray);
+        display: block;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        left: 0;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - var(--header-height));
+        visibility: visible;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+
+    #menu a {
+        padding: 2rem 0;
+        margin: 0 1rem;
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1.6rem;
+        border: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        background: var(--primary);
+        padding: 1.5rem 1.5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        width: 2rem;
+        border-top: 0.2rem solid;
+        background: var(--primary);
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 2rem;
+        height: 0.2rem;
+        background: currentColor;
+        margin-top: 0.5rem;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -0.7rem;
+    }
+
+    #nav {
+        order: 2;
+        justify-content: flex-end;
+    }
 
 }
 
