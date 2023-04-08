@@ -331,7 +331,7 @@ header .container nav ul li a:hover:after {
     #hamburguer {
         display: block;
         width: 2rem;
-        border-top: 0.2rem solid;
+        border-top: 0.2rem solid var(--black-color);
         background: var(--primary);
     }
 
@@ -340,7 +340,7 @@ header .container nav ul li a:hover:after {
         display: block;
         width: 2rem;
         height: 0.2rem;
-        background: currentColor;
+        background: var(--black-color);
         margin-top: 0.5rem;
         transition: .3s;
         position: relative;
