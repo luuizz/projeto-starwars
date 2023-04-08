@@ -245,7 +245,7 @@
 
 @media(max-width: 996px) {
     .s-hero {
-        height: 74.8rem;
+        height: 75.8rem;
     }
 
     .s-hero .conteudo {
@@ -450,5 +450,6 @@
         background-image: url('../assets/bg-rey-mobile.jpg');
         background-position: top center;
         background-size: cover;
+        height: 90rem;
     }
 }

@@ -295,8 +295,7 @@ header .container nav ul li a:hover:after {
         top: var(--header-height);
         height: 0;
         background-color: var(--dark-gray);
-        display: block;
-        transition: .6s;
+        transition: height .3s ease;
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;
