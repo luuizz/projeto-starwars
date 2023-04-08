@@ -79,15 +79,16 @@
 
 /* Layout responsivo */
 
-@media (max-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1366px){
     .tabcontent {
         grid-template-columns: repeat(2, auto);
     }
 
     
     .card-character img {
-        width: 53.7rem;
+        width: 100%;
         height: 28.3rem;
+        object-fit: cover;
     }
 }
 
