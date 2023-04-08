@@ -1,94 +1,109 @@
 /* Botões de navegação */
 
-.conteudo .tablinks {
-    padding: 2rem 2rem 2rem 2rem;
-    align-items: center;
-    background-color: black;
-    color: white;
-    font-size: large;
+.s-characters .tab {
+    padding: 4rem 0 4.8rem;
 }
 
-.conteudo button:hover  {
+.s-characters .tablinks {
+    padding: 2.4rem 1.6rem;
+    align-items: center;
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 2rem;
+    line-height: 2.4rem;
     cursor: pointer;
-    border-bottom: 0.3rem solid #ffc506;
-    transition: all 170ms ease-in;
-    background-color: #1D1E1F;
+    transition: 0.3s ease;
+    position: relative;
+    font-family: var(--fonts-blinker);
+
+}
+
+.tablinks::after {
+    content: '';
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: transparent;
+}
+
+.tablinks:hover::after {
+    background-color: var(--primary);
+}
+
+.s-characters .tablinks:hover  {
+    background-color: var(--gray-heavy);
 }
 
 /* Herois */
 
-#trilogiaInicial {
+.s-characters {
+    background-color: var(--black-color);
+}
+
+.tabcontent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
+    grid-template-columns: repeat(3, auto);
+    gap: 3.2rem;
 }
 
 .card-character {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1.25rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--gray-medium);
 }
 
 .card-character img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.25rem;
+    width: 39.7rem;
+    height: 22.3rem;
 }
 
 .card-character h3 {
-    color: #ffc506;
+    color: var(--primary);
     text-transform: uppercase;
+    margin: 4.8rem 0 2.4rem 3.2rem;
 }
 
-
-#trilogiaOriginal {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
+.card-character p {
+    margin: 0 3.2rem 4.8rem;
 }
 
-.card-character {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1.25rem;
-}
-
-.card-character img {
+.s-characters .container .conteudo {
     width: 100%;
-    height: auto;
-    margin-bottom: 1.25rem;
 }
 
-.card-character h3 {
-    color: #ffc506;
-    text-transform: uppercase;
+
+
+/* Layout responsivo */
+
+@media (max-width: 1025px) {
+    .tabcontent {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    
+    .card-character img {
+        width: 53.7rem;
+        height: 28.3rem;
+    }
 }
 
-#trilogiaModerna {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
+@media (max-width: 998px) {
+    .tabcontent {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .card-character img {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
-.card-character {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1.25rem;
-}
-
-.card-character img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.25rem;
-}
-
-.card-character h3 {
-    color: #ffc506;
-    text-transform: uppercase;
+@media (max-width: 768px) {
+    .tabcontent {
+        grid-template-columns: 1fr;
+    }
 }
