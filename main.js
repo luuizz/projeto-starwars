@@ -68,7 +68,7 @@ $(function () {
 // Swiper seção de mapas
 
 var swiper = new Swiper(".slide-maps", {
-    slidesPerView: 2.5,
+    slidesPerView: 2,
     spaceBetween: 32,
     grabCursor: true,
     breakpoints: {
@@ -82,7 +82,7 @@ var swiper = new Swiper(".slide-maps", {
         slidesPerView: 2.5,
       },
       1200: {
-        slidesPerView: 2.5,
+        slidesPerView: 2,
       },
     }
   });
