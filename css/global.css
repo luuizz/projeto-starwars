@@ -234,7 +234,10 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
+    opacity: 1;
+    visibility: visible;
 }
+
 
 nav ul {
     display: flex;
@@ -279,6 +282,8 @@ header .container nav ul li a:hover:after {
     header nav {
         display: none;
     }
+
+
 }
 
 
@@ -405,7 +410,7 @@ footer .last-info h6 {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: 1000000;
+    z-index: 10;
     pointer-events: none;
 }
 

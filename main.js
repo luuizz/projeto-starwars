@@ -1,5 +1,8 @@
 // Transições entre páginas
-/*function delay(n) {
+/*
+
+
+function delay(n) {
   n = n || 2000;
   return new Promise((done) => {
       setTimeout(() => {
@@ -9,6 +12,7 @@
 }
 
 function pageTransition() {
+  
   var tl = gsap.timeline();
   tl.to(".loading-screen", {
       duration: 1.2,
@@ -35,7 +39,7 @@ function contentAnimation() {
 $(function () {
   barba.init({
       sync: true,
-
+    
       transitions: [
           {
               async leave(data) {
@@ -56,7 +60,10 @@ $(function () {
           },
       ],
   });
-});*/
+});
+
+*/
+
 
 // Swiper seção de mapas
 
@@ -80,6 +87,3 @@ var swiper = new Swiper(".slide-maps", {
     }
   });
 
-  // Ativar menu responsivo
-
-  
