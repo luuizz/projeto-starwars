@@ -48,3 +48,18 @@ function toggleMenu() {
 
 btnMobile.addEventListener('click', toggleMenu);
 
+// Swiper seção de seleção de personagens
+
+var swiper = new Swiper(".mySwiper5", {
+  loop: true,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+});
+

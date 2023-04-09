@@ -46,6 +46,7 @@ body, html {
     --gray-semi-medium: #090A0A;
     --gray-light: #343434;
     --yellow-medium: #E0B20F;
+    --white-transparent: rgba(255, 255, 255, 0.5);
     --alert: #FF0202;
     --fonts-blinker: 'Blinker', sans-serif;
     --fonts-saira: 'Saira', sans-serif;
@@ -125,6 +126,15 @@ p {
     font-size: 1.2rem;
     text-transform: uppercase;
     line-height: 1.4rem;
+    text-align: right;
+}
+
+figcaption {
+    font-family: var(--fonts-blinker);
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
     text-align: right;
 }
 

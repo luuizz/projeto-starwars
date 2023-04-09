@@ -151,28 +151,117 @@
 
 /* Seção seleção de personagens */
 
-.s-selecaoPersonagens {
+.s-selecao-personagens {
     background-image: url('../assets/bg-selecao-personagens.jpg');
     height: 105.7rem;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.s-selecaoPersonagens .conteudo .row {
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
-.s-selecaoPersonagens .conteudo .row h2 {
-    width: 38.4rem;
+.s-selecao-personagens .container .conteudo {
+    margin-bottom: 7.9rem;
 }
 
-.s-selecaoPersonagens .conteudo .left {
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+.s-selecao-personagens .container .conteudo h2 {
+    text-align: center;
 }
 
+.s-selecao-personagens .container .personagens-banners {
+    position: relative;
+}
+
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .character-img {
+    width: 121.6rem;
+}
+
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character {
+    position: absolute;
+    right: 10rem;
+    width: 32.75%;
+    top: 4.5rem;
+    z-index: 10;
+}
+
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character h2 {
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 2.4rem;
+}
+
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character h3 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 52px 52px 52px 52px;
+}
+
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api p {
+    padding-left: 2.4rem;
+}
+
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api p,
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api span {
+    padding-top: 1rem;
+    border-bottom: 1px solid var(--white-transparent);
+}
+
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api p:last-of-type,
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api span:last-of-type {
+    border-bottom: none;
+}
+
+.s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api span {
+    font-family: var(--fonts-blinker);
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    border-right: 1px solid var(--white-transparent);
+}
+
+/* Personalização do swiper */
+
+.swiper-button-prev {
+    content: url('../assets/icon-arrow-left.svg');
+    background: var(--primary);
+    left: 0;
+}
+
+.swiper-button-next {
+    content: url('../assets/icon-arrow-right.svg');
+    background: var(--primary);
+    right: 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 5.2rem;
+    height: 5.2rem;
+    padding: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: var(--yellow-medium);
+}
+
+.swiper * {
+    user-select: none;
+}
 
 /* Seção de mapas */
 

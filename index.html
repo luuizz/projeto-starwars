@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Star Wars Battlefront 2 | Projeto final">
-    <meta name="description" content="Entre no mundo de Star Wars e experimente a ação de batalhas épicas em uma galáxia muito, muito distante. Com gráficos incríveis, gameplay emocionante e uma seleção de personagens icônicos, Star Wars Battlefront 2 é o jogo que todo fã de Star Wars precisa jogar. Junte-se à batalha hoje mesmo e descubra porque este é o melhor jogo de Star Wars já feito!">
+    <meta name="description"
+        content="Entre no mundo de Star Wars e experimente a ação de batalhas épicas em uma galáxia muito, muito distante. Com gráficos incríveis, gameplay emocionante e uma seleção de personagens icônicos, Star Wars Battlefront 2 é o jogo que todo fã de Star Wars precisa jogar. Junte-se à batalha hoje mesmo e descubra porque este é o melhor jogo de Star Wars já feito!">
     <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Saira&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Saira&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
@@ -18,10 +20,7 @@
     <title>Star Wars Battlefront 2 | Projeto final</title>
 </head>
 
-<body data-barba="wrapper">
-    <div class="load-container">
-        <div class="loading-screen"></div>
-    </div>
+<body>
     <!-- Estrutura do cabeçalho -->
     <header id="header" id="scroll">
         <div class="container">
@@ -31,9 +30,8 @@
                         <img src="./assets/logo-swbf2.png" alt="Logotipo escrito Star Wars Battlefront II"></a>
                 </div>
                 <nav id="nav">
-                    <button id="btn-mobile">
-
-                        <span id="hamburguer"></span>
+                    <!-- Botão do responsivo -->
+                    <button id="btn-mobile"><span id="hamburguer"></span>
                     </button>
                     <ul id="menu">
                         <li><a href="./midia.html">Mídia</a></li>
@@ -41,10 +39,6 @@
                         <li><a href="./requisitos-sistema.html">Requisitos do Sistema</a></li>
                         <li><a href="./faq.html">Perguntas frequentes</a></li>
                     </ul>
-
-                    <!-- Ativar Menu responsivo -->
-                    <div class="toggle icon-menu"></div>
-                    <div class="toggle icon-close"></div>
                 </nav>
                 <div class="btnCompra">
                     <a href="./plataformas.html">
@@ -184,6 +178,304 @@
             </div>
         </section>
 
+        <section class="s-selecao-personagens">
+            <div class="container">
+                <div class="conteudo">
+                    <div class="left">
+                        <h2>Conheça alguns dos personagens</h2>
+                    </div>
+                </div>
+
+                <div class="personagens-banners">
+                    <div class="swiper mySwiper5" data-swiper-space-between="0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="character-img">
+                                    <picture>
+                                        <img src="./assets/banner_luke.jpg" alt="Imagem do Luke Skywalker">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Luke Skywalker</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="character-img">
+                                    <picture>
+                                        <img src="./assets/banner_leia.jpg" alt="Imagem da Leia Organa">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Leia Organa</h2>
+                                    <h3>Humana</h3>
+                                    <div class="info-api">
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="character-img">
+                                    <picture>
+                                        <img src="./assets/banner_han solo.jpg" alt="Imagem do Han Solo">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Han Solo</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="character-img">
+                                    <picture>
+                                        <img src="./assets/banner_boba fett.jpg" alt="Imagem do Boba Fett">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Boba Fett</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="character-img">
+                                    <picture>
+                                        <img src="./assets/banner_darth vader.jpg" alt="Imagem do Darth Vader">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Darth Vader</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="character-img">
+                                    <picture>
+                                        <img src="./assets/banner_rey.jpg" alt="Imagem da Rey">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Rey</h2>
+                                    <h3>Humana</h3>
+                                    <div class="info-api">
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="character-img">
+                                    <picture>
+                                        <img src="./assets/banner_finn.jpg" alt="Imagem do Finn">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Finn</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="character-img">
+                                    <picture>
+                                        <img src="./assets/banner_kylo ren.jpg" alt="Imagem do Kylo Ren">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Kylo Ren</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="character-img">
+                                    <picture>
+                                        <img src="./assets/banner_yoda.jpg" alt="Imagem do Yoda">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Yoda</h2>
+                                    <h3>Desconhecido</h3>
+                                    <div class="info-api">
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="character-img">
+                                    <picture>
+                                        <img src="./assets/banner_maul.jpg" alt="Imagem do Darth Maul">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Darth Maul</h2>
+                                    <h3>Dathomirian</h3>
+                                    <div class="info-api">
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+
+                                        <span>Afiliação</span>
+                                        <p>Aliança Jedi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </div>
+        </section>
 
         <section class="maps">
             <div class="container">
