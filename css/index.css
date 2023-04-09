@@ -567,6 +567,21 @@
 
     .s-hero .conteudo .left .cta-links {
         flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .cta-links a {
+        width: 100%;
+    }
+
+    .cta-links .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-links .btn-secondary {
+        width: 100%;
+        text-align: center;
     }
 
     .s-hero .conteudo .left .conteudoHero p {
@@ -597,5 +612,14 @@
         background-position: top center;
         background-size: cover;
         height: 90rem;
+    }
+
+    .s-personagens .container .left a {
+        width: 100%;
+    }
+
+    .s-personagens .container .left .btn-primary {
+        width: 100%;
+        text-align: center;
     }
 }
