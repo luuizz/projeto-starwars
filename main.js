@@ -62,4 +62,3 @@ var swiper = new Swiper(".mySwiper5", {
     crossFade: true
   },
 });
-
