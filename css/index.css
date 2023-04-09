@@ -314,6 +314,12 @@
     }
 }
 
+@media (max-width: 560px) {
+    .swiper-button-prev {
+        left: 65%;
+    }
+}
+
 /* Seção de mapas */
 
 .maps {
