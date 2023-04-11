@@ -1,0 +1,17 @@
+.container {
+  text-align: center;
+  line-height: 2.6rem;
+}
+
+.conteudo h4,
+p,
+img {
+  margin: 2rem auto 0;
+  max-width: 60rem;
+  position: relative;
+  text-align: center;
+}
+
+.container h1 {
+  text-align: center;
+}
