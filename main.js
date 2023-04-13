@@ -62,3 +62,25 @@ var swiper = new Swiper(".mySwiper5", {
     crossFade: true
   },
 });
+
+// Swiper da página de mídia
+
+var swiper = new Swiper(".slide-midia", {
+  slidesPerView: 2,
+  spaceBetween: 32,
+  grabCursor: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1.1,
+    },
+    768: {
+      slidesPerView: 2.2,
+    },
+    991: {
+      slidesPerView: 2.5,
+    },
+    1200: {
+      slidesPerView: 2,
+    },
+  }
+});

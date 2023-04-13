@@ -208,7 +208,13 @@ p {
 }
 
 .banner-initial h1 {
-    padding: 175px 0 5.5rem;
+    padding: 17.5rem 0 5.5rem;
+}
+
+@media (max-width: 998px) {
+    .banner-initial h1 {
+        padding: 13.5rem 0 5.5rem;;
+    }
 }
 
 /* Header */

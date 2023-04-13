@@ -1,0 +1,17 @@
+.slide-midia * {
+    user-select: none;
+}
+
+.trailers {
+    padding: 5.6rem 0;
+}
+
+.trailers .container .conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5.6rem;
+}
+
+.screenshots {
+    margin-bottom: 8rem;
+}
