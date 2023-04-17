@@ -135,8 +135,6 @@ lightboxTrigger.forEach(trigger => {
 });
 lightbox.addEventListener('click', closeLightbox);
 
-const lightboxClose = document.querySelector('.lightbox-close');
-lightboxClose.addEventListener('click', closeLightbox);
 
 lightbox.addEventListener('click', function(e) {
   if (e.target === this) {
