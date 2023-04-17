@@ -13,12 +13,12 @@
 }
 
 @media (max-width: 1200px) {
-    
+
     .main {
         padding: 13rem 0;
     }
 
-    
+
     .main .container .flex .left p {
         padding-right: 7rem;
     }
@@ -26,6 +26,11 @@
 
 
 @media (max-width: 998px) {
+
+    .main {
+        padding: 7rem 0px;
+    }
+
     .main .container .flex {
         flex-direction: column;
         align-items: center;
@@ -42,5 +47,16 @@
     .main .container .flex h2,
     .main .container .flex p {
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 5rem 0;
+    }
+
+
+    .main .container .flex .left p {
+        padding-right: 0;
     }
 }
