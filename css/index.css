@@ -205,17 +205,18 @@
 
 .s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 52px 52px 52px 52px;
 }
 
 .s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api p {
     padding-left: 2.4rem;
+    text-transform: uppercase;
 }
 
 .s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api p,
 .s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api span {
-    padding-top: 1rem;
+    padding-top: 1.2rem;
     border-bottom: 1px solid var(--white-transparent);
 }
 
@@ -357,6 +358,14 @@
 
 
 /* Layout responsivo */
+@media (max-width:1150px) {
+    .s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character {
+        width: 36.75%;
+    }
+}
+
+
+
 @media(max-width: 1024px){
     body, html {
         font-size: 55%;
@@ -443,6 +452,15 @@
         margin-left: 1rem;
     }
 
+    .s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api {
+        grid-template-columns: 1.2fr 1fr;
+    }
+
+    .s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character {
+        width: 43.75%;
+        top: 6.5rem;
+    }
+
 }
 
 @media(max-width: 768px) {
@@ -505,6 +523,11 @@
 
     .s-personagens .left p {
         text-align: center;
+    }
+
+    .s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character {
+        width: 68%;
+        top: 46rem;
     }
 
     .maps {
@@ -601,6 +624,14 @@
 
     .s-info-geral {
         height: 35rem;
+    }
+
+    .s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character {
+        width: 100%;
+    }
+
+    .s-selecao-personagens .container .personagens-banners .mySwiper5 .swiper-wrapper .swiper-slide .info-character .info-api {
+        grid-template-columns: 1.6fr 1fr;
     }
 
     .maps {
