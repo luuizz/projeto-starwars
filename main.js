@@ -144,44 +144,6 @@ lightbox.addEventListener('click', function(e) {
 
 // Integração da API
 
-// var xhr = new XMLHttpRequest();
-
-// var resultado = null;
-
-// xhr.open('GET', 'https://swapi.dev/api/people/1');
-// xhr.send();
-
-// // const naves = document.querySelectorAll('#starships');
-// // const genero = document.querySelectorAll('#gender');
-// // const veiculos = document.querySelectorAll('#vehicles');
-// // const armas = document.querySelectorAll('#weapons');
-
-
-// xhr.onreadystatechange = function() {
-//   if (xhr.readyState == 4 && xhr.status == 200) {
-//     resultado = JSON.parse(xhr.response);
-//     console.log(resultado);
-//   }
-// }
-
-// var genero = resultado[0].gender;
-
-// APi Luke
-// let baseUrl = 'https://swapi.dev/api/people/44/';
-// let genero = document.getElementById('gender');
-// let corCabelo = document.getElementById('skin-color');
-// let anoNascimento = document.getElementById('ano-nascimento');
-// let altura = document.getElementById('altura');
-
-// fetch(baseUrl).then(response => response.json())
-// .then(json =>{
-//   console.log(json)
-//   genero.innerHTML = `${json.gender}`
-//   corCabelo.innerHTML = `${json.hair_color}`
-//   anoNascimento.innerHTML = `${json.birth_year}`
-//   altura.innerHTML = `${json.height}`
-// })
-
 fetch('https://swapi.dev/api/people/1/')
   .then(response => response.json())
   .then(data => {
