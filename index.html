@@ -8,44 +8,40 @@
     <meta property="og:title" content="Star Wars Battlefront 2 | Projeto final">
     <meta name="description"
         content="Entre no mundo de Star Wars e experimente a ação de batalhas épicas em uma galáxia muito, muito distante. Com gráficos incríveis, gameplay emocionante e uma seleção de personagens icônicos, Star Wars Battlefront 2 é o jogo que todo fã de Star Wars precisa jogar. Junte-se à batalha hoje mesmo e descubra porque este é o melhor jogo de Star Wars já feito!">
-
     <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Saira&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+    <base href="./index.html">
     <title>Star Wars Battlefront 2 | Projeto final</title>
 </head>
 
-<body data-barba="wrapper">
-    <div class="load-container">
-        <div class="loading-screen"></div>
-    </div>
+<body>
     <!-- Estrutura do cabeçalho -->
-    <header class="site-header" id="scroll">
+    <header id="header" id="scroll">
         <div class="container">
             <div class="header">
                 <div class="logo">
                     <a href="index.html">
                         <img src="./assets/logo-swbf2.png" alt="Logotipo escrito Star Wars Battlefront II"></a>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="./pages/midia.html">Mídia</a></li>
-                        <li><a href="./pages/personagens.html">Personagens</a></li>
-                        <li><a href="./pages/requisitos-sistema.html">Requisitos do Sistema</a></li>
-                        <li><a href="./pages/faq.html">Perguntas frequentes</a></li>
+                <nav id="nav">
+                    <!-- Botão do responsivo -->
+                    <button id="btn-mobile"><span id="hamburguer"></span>
+                    </button>
+                    <ul id="menu">
+                        <li><a href="./midia.html">Mídia</a></li>
+                        <li><a href="./personagens.html">Personagens</a></li>
+                        <li><a href="./requisitos-sistema.html">Requisitos do Sistema</a></li>
+                        <li><a href="./faq.html">Perguntas frequentes</a></li>
                     </ul>
-
-                    <!-- Ativar Menu responsivo -->
-                    <div class="toggle icon-menu"></div>
-                    <div class="toggle icon-close"></div>
                 </nav>
                 <div class="btnCompra">
-                    <a href="./pages/plataformas.html">
+                    <a href="./plataformas.html">
                         <div class="btn btnPattern__small">Compre agora</div>
                     </a>
                 </div>
@@ -54,7 +50,7 @@
     </header>
 
     <!-- Conteúdo da página -->
-    <main data-barba="container" data-barba-namespace="index">
+    <main>
         <section class="s-hero">
             <div class="container">
                 <div class="conteudo">
@@ -66,7 +62,7 @@
                             <img src="./assets/logo ps4.svg" alt="Logo do PS4">
                         </div>
                         <div class="conteudoHero">
-                            <h1 class="animate-this">Domine a galáxia em Star Wars Battlefront 2!</h1>
+                            <h1>Domine a galáxia em Star Wars Battlefront 2!</h1>
                             <p>Prepare-se para entrar em uma galáxia muito, muito distante e participar de batalhas
                                 épicas em Star Wars Battlefront 2. Junte-se à Rebelião ou ao Império e lute em alguns
                                 dos locais mais emblemáticos da franquia Star Wars. Aproveite uma experiência de jogo
@@ -74,10 +70,10 @@
                                 Wars.</p>
                         </div>
                         <div class="cta-links">
-                            <a href="./pages/plataformas.html">
+                            <a href="./plataformas.html">
                                 <div class="btn-primary">Compre agora</div>
                             </a>
-                            <a href="./pages/midia.html">
+                            <a href="./midia.html">
                                 <div class="btn-secondary">Assista ao trailer</div>
                             </a>
                         </div>
@@ -168,20 +164,246 @@
                         <img src="./assets/bullet.svg" alt="Ícone de um retâgulo rotacionado">
                         <span>Eletronic Arts</span>
                     </h6>
-                    <h2 class="animate-this">
+                    <h2>
                         Personagens heroicos de todas as eras
                     </h2>
                     <p>Jogue como (ou contra) os vilões mais temidos e os heróis mais amados de Star Wars de todas as
                         três eras, incluindo Kylo Ren, Rey, Darth Maul, Yoda e muitos outros. Habilidades únicas e
                         aprimoráveis garantem que os personagens clássicos levem seus poderes e personalidades ao campo
                         de batalha.</p>
-                    <a href="./pages/personagens.html">
+                    <a href="./personagens.html">
                         <div class="btn-primary">Compre agora</div>
                     </a>
                 </div>
             </div>
         </section>
 
+        <section class="s-selecao-personagens">
+            <div class="container">
+                <div class="conteudo">
+                    <div class="left">
+                        <h2>Conheça alguns dos personagens</h2>
+                    </div>
+                </div>
+
+                <div class="personagens-banners">
+                    <div class="swiper mySwiper5" data-swiper-space-between="0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="slide-luke">
+                                <div class="character-img">
+                                    <picture>
+                                        <source srcset="./assets/mobile-thumb-luke.jpg"  media="(max-width: 768px)" width="768" height="auto">
+                                        <img src="./assets/banner_luke.jpg" alt="Imagem do Luke Skywalker">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Luke Skywalker</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Gênero</span>
+                                        <p id="gender"></p>
+
+                                        <span>Cor de cabelo</span>
+                                        <p id="skin-color"></p>
+
+                                        <span>Ano de nascimento</span>
+                                        <p id="ano-nascimento"></p>
+
+                                        <span>Altura</span>
+                                        <p id="altura"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide" id="slide-leia">
+                                <div class="character-img">
+                                    <picture>
+                                        <source srcset="./assets/mobile-thumb-leia.jpg"  media="(max-width: 768px)" width="768" height="auto">
+                                        <img src="./assets/banner_leia.jpg" alt="Imagem da Leia Organa">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Leia Organa</h2>
+                                    <h3>Humana</h3>
+                                    <div class="info-api">
+                                        <span>Gênero</span>
+                                        <p id="gender"></p>
+
+                                        <span>Cor de cabelo</span>
+                                        <p id="skin-color"></p>
+
+                                        <span>Ano de nascimento</span>
+                                        <p id="ano-nascimento"></p>
+
+                                        <span>Altura</span>
+                                        <p id="altura"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide" id="slide-han">
+                                <div class="character-img">
+                                    <picture>
+                                        <source srcset="./assets/mobile-thumb-han-solo.jpg"  media="(max-width: 768px)" width="768" height="auto">
+                                        <img src="./assets/banner_han solo.jpg" alt="Imagem do Han Solo">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Han Solo</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Gênero</span>
+                                        <p id="gender"></p>
+
+                                        <span>Cor de cabelo</span>
+                                        <p id="skin-color"></p>
+
+                                        <span>Ano de nascimento</span>
+                                        <p id="ano-nascimento"></p>
+
+                                        <span>Altura</span>
+                                        <p id="altura"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide" id="slide-boba">
+                                <div class="character-img">
+                                    <picture>
+                                        <source srcset="./assets/mobile-thumb-boba.jpg"  media="(max-width: 768px)" width="768" height="auto">
+                                        <img src="./assets/banner_boba fett.jpg" alt="Imagem do Boba Fett">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Boba Fett</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Gênero</span>
+                                        <p id="gender"></p>
+
+                                        <span>Cor de cabelo</span>
+                                        <p id="skin-color"></p>
+
+                                        <span>Ano de nascimento</span>
+                                        <p id="ano-nascimento"></p>
+
+                                        <span>Altura</span>
+                                        <p id="altura"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide" id="slide-vader">
+                                <div class="character-img">
+                                    <picture>
+                                        <source srcset="./assets/mobile-thumb-darth-vader.jpg"  media="(max-width: 768px)" width="768" height="auto">
+                                        <img src="./assets/banner_darth vader.jpg" alt="Imagem do Darth Vader">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Darth Vader</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Gênero</span>
+                                        <p id="gender"></p>
+
+                                        <span>Cor de cabelo</span>
+                                        <p id="skin-color"></p>
+
+                                        <span>Ano de nascimento</span>
+                                        <p id="ano-nascimento"></p>
+
+                                        <span>Altura</span>
+                                        <p id="altura"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide" id="slide-kylo">
+                                <div class="character-img">
+                                    <picture>
+                                        <source srcset="./assets/mobile-thumb-kylo-ren.jpg"  media="(max-width: 768px)" width="768" height="auto">
+                                        <img src="./assets/banner_kylo ren.jpg" alt="Imagem do Kylo Ren">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Kylo Ren</h2>
+                                    <h3>Humano</h3>
+                                    <div class="info-api">
+                                        <span>Gênero</span>
+                                        <p id="gender"></p>
+
+                                        <span>Cor de cabelo</span>
+                                        <p id="skin-color"></p>
+
+                                        <span>Ano de nascimento</span>
+                                        <p id="ano-nascimento"></p>
+
+                                        <span>Altura</span>
+                                        <p id="altura"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide" id="slide-yoda">
+                                <div class="character-img">
+                                    <picture>
+                                        <source srcset="./assets/mobile-thumb-yoda.jpg"  media="(max-width: 768px)" width="768" height="auto">
+                                        <img src="./assets/banner_yoda.jpg" alt="Imagem do Yoda">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Yoda</h2>
+                                    <h3>Desconhecido</h3>
+                                    <div class="info-api">
+                                        <span>Gênero</span>
+                                        <p id="gender"></p>
+
+                                        <span>Cor de cabelo</span>
+                                        <p id="skin-color"></p>
+
+                                        <span>Ano de nascimento</span>
+                                        <p id="ano-nascimento"></p>
+
+                                        <span>Altura</span>
+                                        <p id="altura"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide" id="slide-maul">
+                                <div class="character-img">
+                                    <picture>
+                                        <source srcset="./assets/mobile-thumb-darth-maul.jpg"  media="(max-width: 768px)" width="768" height="auto">
+                                        <img src="./assets/banner_maul.jpg" alt="Imagem do Darth Maul">
+                                    </picture>
+                                </div>
+                                <div class="info-character">
+                                    <h2>Darth Maul</h2>
+                                    <h3>Dathomirian</h3>
+                                    <div class="info-api">
+                                        <span>Gênero</span>
+                                        <p id="gender"></p>
+
+                                        <span>Cor de cabelo</span>
+                                        <p id="skin-color"></p>
+
+                                        <span>Ano de nascimento</span>
+                                        <p id="ano-nascimento"></p>
+
+                                        <span>Altura</span>
+                                        <p id="altura"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </div>
+        </section>
 
         <section class="maps">
             <div class="container">
@@ -204,7 +426,7 @@
 
 
                 <!-- Swiper -->
-                <div class="swiper mySwiper">
+                <div class="slide-maps">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="maps-select">
@@ -316,12 +538,13 @@
         </div>
     </footer>
     <div class="noise"></div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/e8cb557728.js" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <script src="./js/scripts/main.js"></script>
+    <script src="./js/scripts/api.js"></script>
+    <script src="./js/libs/swiper.js"></script>
 </body>
 
 </html>

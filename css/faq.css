@@ -1,0 +1,33 @@
+.conteudo .container .content_faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 80rem;
+  padding: 8rem 0;
+}
+
+.conteudo .container .content_faq h4 {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.conteudo .container .content_faq p {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.conteudo .container .content_faq img {
+  margin-bottom: 4rem;
+}
+
+.title {
+  text-align: center;
+}
+
+
+@media (max-width: 560px) {
+  .conteudo .container .content_faq {
+    max-width: fit-content;
+  }
+}

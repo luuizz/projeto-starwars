@@ -1,0 +1,253 @@
+/* Caixa */
+
+.platform {
+    background-color: var(--black-color);
+}
+
+.box-platforms {
+    background-color: var(--gray-medium);
+    padding: 6.4rem 5.6rem;
+    margin: 4rem 0;
+    border-top: 2px solid var(--primary);
+}
+
+.choice {
+    margin-bottom: 5.8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.choice span {
+    background-color: var(--primary);
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-right: 2.4rem;
+    font-size: 2.5rem;
+    color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.tab1 {
+    display: flex;
+    gap: 6.4rem;
+    margin-bottom: 8rem;
+}
+
+.tablinks-1 {
+    padding: 1.6rem 5.4rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    transition: 0.5s ease;
+}
+
+.tablinks-1:hover {
+    background-color: var(--gray-light);
+}
+
+.box-platforms .tabcontent {
+    display: none;
+}
+
+.box-platforms .tabcontent .info-tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-platforms .tabcontent .info-tabs .top {
+    border-bottom: 1px solid var(--gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.box-platforms .tabcontent .info-tabs .top h2 {
+    text-align: center;
+    color: var(--primary);
+}
+
+.box-platforms .tabcontent .info-tabs .conteudo-caixa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-platforms .tabcontent .info-tabs .conteudo-caixa .left {
+    margin: 6.4rem 6.4rem 4.8rem 4.8rem;
+}
+
+.box-platforms .tabcontent .info-tabs .conteudo-caixa .left img {
+    width: 43.5rem;
+    height: 53.6rem;
+}
+
+.box-platforms .tabcontent .info-tabs .conteudo-caixa .right {
+    margin-right: 6.9rem;
+    display: none;
+}
+
+.box-platforms .tabcontent .info-tabs .conteudo-caixa .right h3 {
+    margin-bottom: 2.4rem;
+}
+
+.box-platforms .tabcontent .info-tabs .conteudo-caixa .right p {
+    margin-bottom: 1.6rem;
+}
+
+.box-platforms .tabcontent .info-tabs .conteudo-caixa .right h5 {
+    margin-bottom: 2.4rem;
+}
+
+.box-platforms .tabcontent .info-tabs .conteudo-caixa .right span {
+    color: var(--alert);
+}
+
+.box-platforms .tabcontent .info-tabs .conteudo-caixa .right a div {
+    width: 26.5rem;
+    text-align: center;
+}
+
+.box-platforms .aviso {
+    margin-top: 4rem;
+}
+
+.box-platforms .aviso p {
+    margin-top: 1.6rem;
+}
+
+.box-platforms .aviso p span {
+    color: var(--alert);
+}
+
+/* Ativar abas */
+
+.box-platforms .tabcontent {
+    background-color: var(--black-color);
+    display: none;
+}
+
+.box-platforms .tabcontent.active {
+    display: flex;
+}
+
+.box-platforms .tabcontent.active .info-tabs .conteudo-caixa .right {
+    display: block;
+    -webkit-animation: fadeLeft .3s forwards;
+    animation: fadeLeft .5s forwards;
+}
+
+
+.tab1 button.active {
+    background-color: var(--primary);
+  }
+
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(3rem);
+        transform: translateX(3rem);
+    }
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+
+/* Layout responsivo */
+
+@media (max-width: 998px) {
+    .box-platforms {
+        padding: 3.4rem 2.6rem;
+    }
+
+    .choice {
+        margin-bottom: 4.8rem;
+    }
+
+    .tab1 {
+        margin-bottom: 4rem;
+        gap: 5.4rem;
+    }
+
+    .box-platforms .tabcontent .info-tabs .conteudo-caixa {
+        flex-direction: column;
+        padding-bottom: 58px;
+        padding-left: 40px;
+    }
+  
+    .box-platforms .tabcontent .info-tabs .conteudo-caixa .right p {
+        text-align: center;
+    }
+
+    .box-platforms .tabcontent .info-tabs .conteudo-caixa .right h5 {
+        text-align: center;
+    }
+
+    .box-platforms .tabcontent.active .info-tabs .conteudo-caixa .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .tab1 {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.1rem;
+
+    }
+
+    .tab1 .tablinks-1.active {
+        width: 100%;
+        height: 6.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tablinks-1 {
+        width: 100%;
+        height: 6.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-platforms .tabcontent .info-tabs {
+        width: 100%;
+    }
+
+    .box-platforms .tabcontent .info-tabs .conteudo-caixa {
+        flex-direction: column;
+    }
+
+    .box-platforms .tabcontent .info-tabs .conteudo-caixa .left {
+        margin: 2rem 0;
+    }
+
+    .box-platforms .tabcontent .info-tabs .conteudo-caixa .left img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box-platforms .tabcontent .info-tabs .conteudo-caixa .right h3 {
+        text-align: center;
+    }
+    
+    .box-platforms .tabcontent .info-tabs .conteudo-caixa {
+        padding: 0 2rem 5.8rem;
+    }
+
+    .box-platforms .tabcontent .info-tabs .conteudo-caixa .right {
+        margin: 0;
+    }
+}

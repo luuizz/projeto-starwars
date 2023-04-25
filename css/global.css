@@ -42,9 +42,11 @@ body, html {
     --black-color: #000000;
     --dark-gray: #0D0D0D;
     --gray-medium: #1D1E1F;
+    --gray-heavy: #121212;
     --gray-semi-medium: #090A0A;
     --gray-light: #343434;
     --yellow-medium: #E0B20F;
+    --white-transparent: rgba(255, 255, 255, 0.5);
     --alert: #FF0202;
     --fonts-blinker: 'Blinker', sans-serif;
     --fonts-saira: 'Saira', sans-serif;
@@ -86,6 +88,39 @@ p {
     font-size: 1.6rem;
 }
 
+/* Fontes responsivas */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4.8rem;
+    }
+    
+    h2 {
+        font-size: 3.2rem;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+    }
+    
+    h4 {
+        font-size: 2rem;
+    }
+    
+    h5 {
+        font-size: 1.6rem;
+    }
+    
+    h6 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+
 .small-text {
     font-family: var(--fonts-blinker);
     font-size: 1.2rem;
@@ -94,12 +129,30 @@ p {
     text-align: right;
 }
 
+
 /* Grids */
 .container {
     margin: 0 auto;
     width: 100%;
     max-width: 128.6rem;
     padding: 0px 1.5rem;
+}
+
+@media(max-width: 1024px){
+    body, html {
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width: 560px) {
+    body, html {
+        font-size: 62.5%;
+    }
+
+    .container {
+        padding: 0px 2rem;
+    }
 }
 
 /* Patterns */
@@ -147,7 +200,7 @@ p {
 }
 
 .banner-initial {
-    background-image: url('./assets/banner-initial.jpg');
+    background-image: url('../assets/banner-initial.jpg');
     height: 32.4rem;
     background-position: center center;
     background-size: cover;
@@ -155,7 +208,13 @@ p {
 }
 
 .banner-initial h1 {
-    padding: 175px 0 5.5rem;
+    padding: 17.5rem 0 5.5rem;
+}
+
+@media (max-width: 998px) {
+    .banner-initial h1 {
+        padding: 13.5rem 0 5.5rem;;
+    }
 }
 
 /* Header */
@@ -184,7 +243,10 @@ nav {
     align-items: center;
     justify-content: center;
     width: 100%;
+    opacity: 1;
+    visibility: visible;
 }
+
 
 nav ul {
     display: flex;
@@ -222,6 +284,96 @@ header .container nav ul li a:hover:after {
     width: 100%;
     transition: width .3s;
 }
+
+#btn-mobile {
+    display: none;
+}
+
+/* Menu responsivo */
+
+@media (max-width: 998px) {
+    .btnCompra {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: var(--header-height);
+        height: 0;
+        background-color: var(--dark-gray);
+        transition: height .3s ease;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        left: 0;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - var(--header-height));
+        visibility: visible;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+
+    #menu a {
+        padding: 2rem 0;
+        margin: 0 1rem;
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1.6rem;
+        border: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        background: var(--primary);
+        padding: 1.5rem 1.5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        width: 2rem;
+        border-top: 0.2rem solid var(--black-color);
+        background: var(--primary);
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 2rem;
+        height: 0.2rem;
+        background: var(--black-color);
+        margin-top: 0.5rem;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -0.7rem;
+    }
+
+    #nav {
+        order: 2;
+        justify-content: flex-end;
+    }
+
+}
+
 
 .btnCompra a{
     background-color: var(--primary);
@@ -294,35 +446,39 @@ footer .last-info h6 {
     font-family: var(--fonts-saira);
 }
 
+/* Rodapé responsivo */
+
+@media (max-width: 768px) {
+    footer {
+        height: 33.7rem;
+    }
+
+    footer .firts-info {
+        flex-direction: column;
+    }
+
+    footer .last-info h6 {
+        margin-bottom: 2.4rem;
+        text-align: center;
+    }
+
+    footer .last-info {
+        flex-direction: column;
+    }
+
+    
+}
+
 .noise {
     display: block;
     width: 100vw;
     height: 100vh;
     opacity: 0.1;
-    background-image: url('./assets/ruido-animado.gif');
+    background-image: url('../assets/ruido-animado.gif');
     overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     pointer-events: none;
     z-index: 1;
-}
-
-.loading-screen {
-    position: relative;
-    padding: 0;
-    background-color: var(--primary);
-    width: 0;
-    height: 100%;
-}
-
-.load-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 10;
-    pointer-events: none;
 }
