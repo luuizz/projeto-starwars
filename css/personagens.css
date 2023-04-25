@@ -1,7 +1,4 @@
 /* Botões de navegação */
-body {
-    background-color: black;
-}
 
 .conteudo .tablinks {
     padding: 2rem 2rem 2rem 2rem;
@@ -11,11 +8,35 @@ body {
     font-size: large;
 }
 
-.conteudo button:hover  {
+.conteudo .tablinks {
+    padding: 2.4rem 1.6rem;
+    align-items: center;
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 2rem;
+    line-height: 2.4rem;
     cursor: pointer;
-    border-bottom: 0.3rem solid #ffc506;
-    transition: all 170ms ease-in;
-    background-color: #1D1E1F;
+    transition: 0.3s ease;
+    position: relative;
+    font-family: var(--fonts-blinker);
+}
+
+.tablinks::after {
+    content: '';
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: transparent;
+}
+
+.tablinks:hover::after {
+    background-color: var(--primary);
+}
+
+.conteudo .tablinks:hover  {
+    background-color: var(--gray-heavy);
 }
 
 /* Herois */
@@ -26,25 +47,6 @@ body {
     gap: 1.25rem;
 }
 
-.card-character {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1.25rem;
-}
-
-.card-character img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.25rem;
-}
-
-.card-character h3 {
-    color: #ffc506;
-    text-transform: uppercase;
-}
-
 
 #trilogiaOriginal {
     display: grid;
@@ -52,24 +54,6 @@ body {
     gap: 1.25rem;
 }
 
-.card-character {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1.25rem;
-}
-
-.card-character img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.25rem;
-}
-
-.card-character h3 {
-    color: #ffc506;
-    text-transform: uppercase;
-}
 
 #trilogiaModerna {
     display: grid;
