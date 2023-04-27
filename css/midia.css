@@ -158,7 +158,7 @@
 @media (max-width: 560px) {
     .trailers .container .conteudo .info-trailer {
         height: 5.4rem;
-        max-width: 41.7rem;
+        max-width: 54.4rem;
         margin-top: -5.7rem;
     }
 
@@ -173,7 +173,7 @@
     }
 
     .lightbox-content {
-        width: 93%;
+        width: 75%;
     }
 }
 
@@ -202,7 +202,7 @@
 
 .lightbox-content {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 5rem);
     left: 50%;
     transform: translate(-50%, -50%);
 }

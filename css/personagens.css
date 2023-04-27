@@ -13,7 +13,40 @@
     color: var(--white-color);
     font-size: 2rem;
     line-height: 2.4rem;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+.conteudo .tablinks {
+    padding: 2.4rem 1.6rem;
+    align-items: center;
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 2rem;
+    line-height: 2.4rem;
     cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    font-family: var(--fonts-blinker);
+}
+
+.tablinks::after {
+    content: '';
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: transparent;
+}
+
+.tablinks:hover::after {
+    background-color: var(--primary);
+}
+
+.conteudo .tablinks:hover  {
+    background-color: var(--gray-heavy);
     transition: 0.3s ease;
     position: relative;
     font-family: var(--fonts-blinker);
