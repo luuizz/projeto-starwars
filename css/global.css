@@ -48,6 +48,7 @@ body, html {
     --yellow-medium: #E0B20F;
     --white-transparent: rgba(255, 255, 255, 0.5);
     --alert: #FF0202;
+    --white-transparent-100: rgba(255, 255, 255, 0.1);
     --fonts-blinker: 'Blinker', sans-serif;
     --fonts-saira: 'Saira', sans-serif;
     --header-height: 8rem;

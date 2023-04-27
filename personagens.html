@@ -18,10 +18,8 @@
     <base href="./index.html">
 </head>
 
-<body data-barba="wrapper">
-    <div class="load-container">
-        <div class="loading-screen"></div>
-    </div>
+<body>
+
     <!-- Cabeçalho -->
     <header id="header" id="scroll">
         <div class="container">
@@ -55,7 +53,7 @@
         </div>
     </header>
 
-    <main data-barba="container" data-barba-namespace="personagens">
+    <main data-barba="container">
         <section class="banner-initial">
             <div class="container">
                 <h1 class="titulo-personagens animate-this">Personagens</h1>
@@ -67,9 +65,9 @@
             <div class="container">
                 <div class="conteudo">
                     <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'trilogiaInicial')">Trilogia Inicial</button>
-                        <button class="tablinks" onclick="openTab(event, 'trilogiaClassica')">Trilogia Classica</button>
-                        <button class="tablinks" onclick="openTab(event, 'trilogiaModerna')">Trilogia Moderna</button>
+                        <button class="tablinks active" onclick="abrirAbas(event, 'trilogiaInicial')">Trilogia Inicial</button>
+                        <button class="tablinks" onclick="abrirAbas(event, 'trilogiaClassica')">Trilogia Classica</button>
+                        <button class="tablinks" onclick="abrirAbas(event, 'trilogiaModerna')">Trilogia Moderna</button>
                     </div>
 
                     <div id="trilogiaInicial" class="tabcontent">
@@ -366,6 +364,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/e8cb557728.js" crossorigin="anonymous"></script>
     <script src="./js/scripts/main.js"></script>
+    <script src="./js/scripts/tabs.js"></script>
 
 </body>
 

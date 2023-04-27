@@ -1,7 +1,9 @@
 /* Botões de navegação */
 
 .s-characters .tab {
-    padding: 4rem 0 4.8rem;
+    margin-bottom: 4.8rem;
+    padding-top: 4rem;
+    border-bottom: 1px solid var(--white-transparent-100);
 }
 
 .s-characters .tablinks {
@@ -36,16 +38,40 @@
     background-color: var(--gray-heavy);
 }
 
+.s-characters .tabcontent {
+    display: none;
+}
+
+.s-characters .tabcontent.active {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 3.2rem;
+    animation: fadeLeft .3s forwards;
+    -webkit-animation: fadeUp .3s forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+    }
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+.s-characters .tablinks.active {
+    background-color: var(--gray-heavy);
+    border-bottom: 1px solid var(--primary);
+}
 /* Herois */
 
 .s-characters {
     background-color: var(--black-color);
-}
-
-.tabcontent {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 3.2rem;
 }
 
 .card-character {
@@ -80,7 +106,7 @@
 /* Layout responsivo */
 
 @media (min-width: 1025px) and (max-width: 1366px){
-    .tabcontent {
+    .tabcontent.active {
         grid-template-columns: repeat(2, auto);
     }
 
@@ -93,7 +119,7 @@
 }
 
 @media (max-width: 998px) {
-    .tabcontent {
+    .tabcontent.active {
         grid-template-columns: repeat(2, auto);
     }
 
@@ -104,7 +130,7 @@
 }
 
 @media (max-width: 768px) {
-    .tabcontent {
+    .tabcontent.active {
         grid-template-columns: 1fr;
     }
 }
