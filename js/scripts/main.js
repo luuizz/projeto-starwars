@@ -8,3 +8,10 @@ function toggleMenu() {
 }
 
 btnMobile.addEventListener('click', toggleMenu);
+
+// Inicializar AOS
+
+AOS.init({
+   duration: 1000,
+   once: false,
+});

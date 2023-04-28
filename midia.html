@@ -11,17 +11,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&family=Saira&display=swap"
         rel="stylesheet">
     <base href="./index.html">
 </head>
-
-<body data-barba="wrapper">
-    <div class="load-container">
-        <div class="loading-screen"></div>
-    </div>
 
     <!-- Estrutura do cabeçalho -->
     <header id="header" id="scroll">
@@ -59,7 +55,7 @@
     <main>
         <section class="banner-initial">
             <div class="container">
-                <h1 class="animate-this">Mídia</h1>
+                <h1 class="animate-this" data-aos="fade-up">Mídia</h1>
             </div>
         </section>
 
@@ -163,7 +159,7 @@
         <section class="screenshots">
             <div class="container">
                 <div class="conteudo">
-                    <h2>Galeria</h2>
+                    <h2 data-aos="fade-up">Galeria</h2>
                 </div>
                 <div class="slide-midia">
                     <div class="swiper-wrapper">
@@ -284,6 +280,7 @@
         </div>
     </footer>
     <div class="noise"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/e8cb557728.js" crossorigin="anonymous"></script>
     <script src="./js/scripts/main.js"></script>
