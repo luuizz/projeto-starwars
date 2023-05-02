@@ -13,5 +13,5 @@ btnMobile.addEventListener('click', toggleMenu);
 
 AOS.init({
    duration: 1000,
-   once: false,
+   once: true,
 });
