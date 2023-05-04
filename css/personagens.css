@@ -138,8 +138,8 @@
 
 /* Layout responsivo */
 
-@media (min-width: 1025px) and (max-width: 1366px){
-    .tabcontent.active {
+@media (max-width: 1025px){
+    .s-characters .tabcontent.active {
         grid-template-columns: repeat(2, auto);
     }
 
@@ -152,7 +152,7 @@
 }
 
 @media (max-width: 998px) {
-    .tabcontent.active {
+    .s-characters .tabcontent.active {
         grid-template-columns: repeat(2, auto);
     }
 
@@ -163,7 +163,7 @@
 }
 
 @media (max-width: 768px) {
-    .tabcontent.active {
+    .s-characters .tabcontent.active {
         grid-template-columns: 1fr;
     }
 }
